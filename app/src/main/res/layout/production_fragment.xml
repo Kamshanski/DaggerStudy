@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Количество готовых игрушек по типам"/>
+
+    <TextView
+        android:id="@+id/toysAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_"/>
+
+    <Space
+        android:layout_width="55dp"
+        android:layout_height="55dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Количество занятых раотников"/>
+
+    <TextView
+        android:id="@+id/occupiedWorkersNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_"/>
+
+    <Space
+        android:layout_width="55dp"
+        android:layout_height="55dp"/>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/hire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нанять (Доступно 0)"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/workersList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</LinearLayout>
